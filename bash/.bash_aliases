@@ -1,6 +1,6 @@
 ## GENERAL ##
 alias mkdir='mkdir -pv'
-alias nano='nano -lmEWexDSc -T 2'
+alias nano='nano -lmEWexDc -T 2'
 alias vim='nvim'
 alias svim='sudo nvim'
 alias unzip='7zr x'
