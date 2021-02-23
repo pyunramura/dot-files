@@ -44,9 +44,11 @@ alias nscript='echo -e "#!/usr/bin/env bash\n#set -Eeuxo pipefail\nset -e" >'
 
 ## PROGRAM SPECIFIC ##
 alias dr='docker'
+alias dcu='docker-compose up -d'
+alias dcd='docker-compose down'
 # alias kc='kubectl'
 # alias kca='kubectl apply -f'
 # alias kcd='kubectl delete -f'
 # alias seal='kubeseal --controller-name sealed-secrets'
 alias chalias='ealias'
-alias ealias='$EDITOR /config/.bash_aliases'
+alias ealias='$EDITOR ~/.bash_aliases'
