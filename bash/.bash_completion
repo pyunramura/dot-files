@@ -1,0 +1,4 @@
+# For bash tab-completions for aliases found in ~/.bash_aliases
+# Use complete -F _complete_alias 'whatever_alias' >> ~/.bash_completion
+complete -F _complete_alias 'd'
+complete -F _complete_alias 'dc'

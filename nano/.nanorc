@@ -1,0 +1,17 @@
+# my awesome ~/.config/nanorc file!!!
+include "~/.config/nano/DockerFile.nanorc" # DockerFile
+include "~/.config/nano/bash.nanorc" # Bourne shell scripts
+include "~/.config/nano/c.nanorc" # C/C++
+include "~/.config/nano/css.nanorc" # CSS
+include "~/.config/nano/default.nanorc" # Default
+include "~/.config/nano/dotenv.nanorc" # .env files
+include "~/.config/nano/html.nanorc" # HTML
+include "~/.config/nano/initscript.nanorc" # /etc/init.d scripts
+include "~/.config/nano/makefile.nanorc" # Makefile
+include "~/.config/nano/markdown.nanorc" # Markdown
+include "~/.config/nano/nanorc.nanorc" # spifftastic nano highlighting nano!!
+include "~/.config/nano/passwd.nanorc" # /etc/passwd file
+include "~/.config/nano/sh.nanorc" # Shell Script
+include "~/.config/nano/python.nanorc" # Python
+include "~/.config/nano/toml.nanorc" # TOML
+include "~/.config/nano/yaml.nanorc" # YAML

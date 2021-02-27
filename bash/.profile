@@ -25,5 +25,4 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-neofetch --source /home/pyunramura/.config/neofetch/neofetch.art --ascii_colors 5 --colors 5 --separator ' :'
-export EDITOR=$(which nano)
+neofetch --source ~/.config/neofetch/neofetch.art --ascii_colors 5 --colors 5 --separator ' :'

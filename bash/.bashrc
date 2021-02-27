@@ -1,3 +1,21 @@
+### EXPORTS ###
+export EDITOR=nano
+
+### CUSTOM SOURCES ###
+# Enable insults for wrong commands
+if [ -f /etc/bash.command-not-found ]; then
+  source /etc/bash.command-not-found
+fi
+
+# Enable tab completion for bash aliases (https://github.com/cykerway/complete-alias)
+if [ -f ~/.config/complete_alias/complete_alias ]; then
+  source ~/.config/complete_alias/complete_alias
+fi
+
+### CUSTOM FUNCTIONS ###
+junk() { for item in "$@"; do echo "Trashing: $item" ; mv "$item" ~/.Trash/; done; }
+add-tab-alias() { for item in "$@"; do echo "complete -F _complete_alias '$item'" >> ~/.bash_completion; done; }
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -114,9 +132,4 @@ if ! shopt -oq posix; then
   elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
   fi
-fi
-
-# enable insults for wrong commands
-if [ -f /etc/bash.command-not-found ]; then
-  . /etc/bash.command-not-found
 fi
