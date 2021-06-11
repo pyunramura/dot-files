@@ -1,6 +1,7 @@
 ## GENERAL ##
 alias mkdir='mkdir -pv'
 alias nano='nano -lmEWexDc -T 2'
+alias lano='/bin/nano'
 alias vim='nvim'
 alias svim='sudo nvim'
 alias unzip='7zr x'
@@ -43,9 +44,9 @@ alias nsh='nscript'
 alias nscript='echo -e "#!/usr/bin/env bash\n#set -Eeuxo pipefail\nset -e" >'
 
 ## PROGRAM SPECIFIC ##
-alias dr='docker'
-alias dcu='docker-compose up -d'
-alias dcd='docker-compose down'
+#alias dr='docker'
+#alias dcu='docker-compose up -d'
+#alias dcd='docker-compose down'
 # alias kc='kubectl'
 # alias kca='kubectl apply -f'
 # alias kcd='kubectl delete -f'
