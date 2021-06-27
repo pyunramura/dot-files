@@ -1,6 +1,7 @@
 ## GENERAL ##
 alias mkdir='mkdir -pv'
-alias nano='nano -lmEWexDc -T 2'
+alias lnano='/usr/bin/nano'
+alias nano='nano -lEWexDc -T 2'
 alias lano='/bin/nano'
 alias vim='nvim'
 alias svim='sudo nvim'
