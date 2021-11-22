@@ -2,7 +2,7 @@
 alias mkdir='mkdir -pv'
 alias e='nano'
 alias E='sudo nano'
-alias nano='nano -lmEWexD_! -T 2'
+alias nano='nano -lEWexD_! -T 2'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -F'
