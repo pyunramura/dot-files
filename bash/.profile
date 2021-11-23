@@ -25,4 +25,5 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-neofetch --config ~/.config/neofetch/cofig.conf --source ~/.config/neofetch/neofetch.art --ascii_colors 1 2 3 4 5 6 --colors 1 2 3 4 5 6 --separator ' :' --speed_shorthand on --memory_percent on --bar_colors 6 5 --bar_char '+' '.' --memory_display barinfo --disk_display barinfo
+#neofetch --config ~/.config/neofetch/cofig.conf --source ~/.config/neofetch/neofetch.art --ascii_colors 1 2 3 4 5 6 --colors 1 2 3 4 5 6 --separator ' :' --speed_shorthand on --memory_percent on --bar_colors 6 5 --bar_char '+' '.' --memory_display barinfo --disk_display barinfo
+macchina
