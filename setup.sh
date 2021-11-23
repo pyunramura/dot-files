@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
-set -e
 
 STOW_APPS="$*"
 
 DIR=$(echo $0 | rev | cut -d '/' -f2- | rev)
-mv $DIR ~/.dot-files
-cd ~/.dot-files
-stow $STOW_APPS
+cd $DIR
+
+OVERRIDE="bash"
+TARGET=~/
+for k in $OVERRIDE; do
+for i in $(find ./.$k -type f | cut -d '/' -f3-) ; do
+rm -f $TARGET$i
+done
+done
+
+stow --target=$TARGET $STOW_APPS
