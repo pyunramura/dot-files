@@ -43,6 +43,7 @@ alias gauth='genauth'
 alias genauth='echo "user: $(tr -dc 'a-zA-Z' < /dev/urandom | dd bs=4 count=2 2>/dev/null)"; echo "p_16: $(tr -dc "\&\_a-zA-Z0-9\^\*\@" < /dev/urandom | dd bs=4 count=4 2>/dev/null)"; echo "p_24: $(tr -dc "\&\_a-zA-Z0-9\^\*\@" < /dev/urandom | dd bs=4 count=6 2>/dev/null)"'
 alias nsh='nscript'
 alias nscript='echo -e "#!/usr/bin/env bash\n#set -Eeuxo pipefail\nset -e" >'
+alias the_matrix='tr -c "[:print:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock 2>/dev/null | GREP_COLOR="1;32" grep --color "[^ ]"' # use digit in place of print for sparse with numbers only
 
 ## PROGRAM SPECIFIC ##
 #alias dr='docker'
