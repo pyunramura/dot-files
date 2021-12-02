@@ -4,7 +4,7 @@ install_figlet (){
   local DIST=$(if $(which apt); then echo "apt get"; else echo "apk add"; fi)
   $DIST figlet
 }
-install_figlet
+#install_figlet
 
 STOW_APPS="$*"
 TARGET=~/
