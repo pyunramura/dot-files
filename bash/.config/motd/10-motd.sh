@@ -11,7 +11,7 @@ banner
 
 uname -snrvm
 
-ubuntu (){
+motd_ubuntu (){
   echo -e " System info on......: $(date)"
   echo -e " Hostname............: $(hostname | head -1 | xargs)"
   echo -e " Last login..........: $(last | head -1 | cut -c 1-9 | xargs) at $(last | head -1 | cut -c 40-55 | xargs) from $(last | head -1 | cut -c 23-39 | xargs)"
@@ -25,7 +25,7 @@ ubuntu (){
   echo -e " Processes...........: There are currently $(ps -ef | wc -l) processes running"
 }
 
-alpine (){
+motd_alpine (){
   echo -e " System info on......: $(date)"
   echo -e " Hostname............: $(hostname | head -1 | xargs)"
   echo -e " Uptime..............: $(uptime | cut -f 4-5 -d ' ' | tr ',' ' ')"
