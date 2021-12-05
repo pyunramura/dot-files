@@ -36,7 +36,7 @@ motd_alpine (){
   echo -e " Network.............: Interface$(ip -4 ad | grep 'state UP' | awk -F ":" '!/^[0-9]*: ?do/ {print $2}' | head -n1) is active with ip address $(hostname -i | awk '{print $1}')"
   echo -e " Processes...........: There are currently $(ps -ef | wc -l) processes running"
 }
-if $(which apt); then
+if [ $(which apt) ]; then
   motd_ubuntu
   else
   motd_alpine
