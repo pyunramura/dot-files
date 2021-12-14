@@ -1,1 +1,3 @@
 /**/*.txt
+/**/micro/backups
+/**/micro/buffers
