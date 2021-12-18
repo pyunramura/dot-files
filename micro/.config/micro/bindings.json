@@ -1,8 +1,8 @@
 {
-  "Alt-/": "lua:comment.comment",
-  "CtrlUnderscore": "lua:comment.comment",
-  "Ctrln": "command-edit:set mouse o",
-  "F5": "lua:wc.wordCount",
-  "Alt-'": "command:vsplit",
-  "Alt-;": "command:hsplit"
+    "Alt-/": "lua:comment.comment",
+    "CtrlUnderscore": "lua:comment.comment",
+    "Ctrln": "command-edit:set mouse o",
+    "F5": "lua:wc.wordCount",
+    "Alt-'": "command:vsplit",
+    "Alt-;": "command:hsplit"
 }
