@@ -45,10 +45,14 @@ alias the_matrix='tr -c "[:print:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=un
 
 ## PROGRAM SPECIFIC ##
 alias d='docker'
-alias dcu='docker-compose up -d'
-alias dcd='docker-compose down'
-alias dcclean='docker-compose down --volumes'
-alias dcall='docker-compose down --volumes --rmi all --remove-orphans'
+alias dps='docker ps -a'
+alias dls='docker image ls'
+alias drrm='docker run --rm -ti'
+alias dbuild='docker build --force-rm'
+alias dcu='docker-compose up -d 2>/dev/null || docker compose up -d'
+alias dcd='docker-compose down 2>/dev/null || docker compose down'
+alias dcclean='docker-compose down --volumes 2>/dev/null || docker compose down --volumes'
+alias dcall='docker-compose down --volumes --rmi all --remove-orphans 2>/dev/null || docker compose down --volumes --rmi all --remove-orphans'
 alias dlog='docker logs -f'
 # alias vim='nvim'
 # alias svim='sudo nvim'
