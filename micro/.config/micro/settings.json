@@ -4,8 +4,12 @@
     "colorcolumn": 120,
     "colorscheme": "-gruvbox",
     "diffgutter": true,
+    "eofnewline": false,
+    "fastdirty": true,
+    "ignorecase": false,
     "initlua": true,
     "mkparents": true,
+    "mouse": false,
     "parsecursor": true,
     "pluginchannels": [
         "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
